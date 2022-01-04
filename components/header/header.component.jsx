@@ -9,7 +9,8 @@ const { Text } = Typography
 const HeaderComponent = () => {
     return (
         <HeaderContainer>
-            <Row justify='space-between'>
+            <Row_Container>
+            <Row justify='space-between' >
                 <Col>
                 <Image preview={false} src='/static/Group 7016.svg'/>
                 </Col>
@@ -21,6 +22,7 @@ const HeaderComponent = () => {
                 </Space>
                 </Col>
             </Row>
+            </Row_Container>
             
         </HeaderContainer>
     )

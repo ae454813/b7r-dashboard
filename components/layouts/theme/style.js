@@ -27,6 +27,7 @@ export const theme = (props) => {
         darkGray: "#9b9b9b48",
         gray: "rgba(235, 235, 235, 0.14)",
         lightBlue: "#E1F5FA",
+        lightBlue1: "#1985A1"
       },
       colors: {
         black: "#000",
@@ -37,6 +38,7 @@ export const theme = (props) => {
         Gray3: "#272833",
         Gray4: "#444444",
         Gray5: "#18191F",
+        Gray6: "#BDBDBD",
         red: "#FE5F55",
         hoverRed: "#FF7169",
         Gray6: "#999",
