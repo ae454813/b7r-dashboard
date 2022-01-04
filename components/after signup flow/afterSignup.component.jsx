@@ -59,11 +59,19 @@ const steps = [
         <Row>
           <Col md={10}>
             <Typography>
-              <Title level={3}>{AFTER_SIGNUP.continueBuildStore}</Title>
-              <Text style={{fontSize: "18px" , lineHeight: "34px"}}>{AFTER_SIGNUP.finishSomeDetails}</Text>
+              <Title level={3} className="registraion-title">{AFTER_SIGNUP.continueBuildStore}</Title>
+              <Text className="registration-description">{AFTER_SIGNUP.finishSomeDetails}</Text>
             </Typography>
           </Col>
           <Col md={14}>
+          {current > 0 && (
+                  <Button className="Mobile-btn-3" type="text" onClick={() => prev()}>
+                    <Space size={8}>
+                    <RightOutlined style={{fontSize: "7px"}} />
+                    {AFTER_SIGNUP.backButton}
+                    </Space> 
+                  </Button>
+                )}
             <ProgressStepsContainer>
               <Text className="step-num">{steps[current].title}</Text>
               <Row gutter={2}>
@@ -90,7 +98,7 @@ const steps = [
               </Row>
               <div>{steps[current].content}</div>
               <Row justify="space-between" className="steps-action">
-                <Col md={24} >
+                <Col md={12} xs={4}>
                 <Space size={8}>
                 {current < steps.length - 1 && (
                   <Button type="primary" className="btn-1" onClick={() => next()}>
@@ -116,7 +124,7 @@ const steps = [
                 )}
                 </Space>
                 </Col>
-                <Col md={24}>
+                <Col md={12} xs={0}>
                 {current > 0 && (
                   <Button className="btn-3" type="text" onClick={() => prev()}>
                     <Space size={8}>

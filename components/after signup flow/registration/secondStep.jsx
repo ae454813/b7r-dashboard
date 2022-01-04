@@ -9,7 +9,7 @@ const SecondtStep = () => {
   return (
     <RegistirationContainer>
         <Row gutter={[0, 32]}>
-          <Col sm={24}>
+          <Col  xs={24}>
             <Title className="main-title" level={4}>
               {AFTER_SIGNUP.introduceYourstore}
             </Title>
@@ -17,7 +17,7 @@ const SecondtStep = () => {
               {AFTER_SIGNUP.secretInformation}
             </Text>
           </Col>
-          <Col sm={24}>
+          <Col  xs={24}>
             <Form.Item
               label={
                 <Text className="secondStep-header">
