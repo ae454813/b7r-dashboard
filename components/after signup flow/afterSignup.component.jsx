@@ -58,7 +58,7 @@ const steps = [
       }} form={form} layout="vertical">
         <Row>
           <Col md={10}>
-            <Typography>
+            <Typography style={{marginBottom: "15px"}}>
               <Title level={3} className="registraion-title">{AFTER_SIGNUP.continueBuildStore}</Title>
               <Text className="registration-description">{AFTER_SIGNUP.finishSomeDetails}</Text>
             </Typography>
@@ -98,7 +98,7 @@ const steps = [
               </Row>
               <div>{steps[current].content}</div>
               <Row justify="space-between" className="steps-action">
-                <Col md={12} xs={4}>
+                <Col md={12} >
                 <Space size={8}>
                 {current < steps.length - 1 && (
                   <Button type="primary" className="btn-1" onClick={() => next()}>
@@ -124,7 +124,7 @@ const steps = [
                 )}
                 </Space>
                 </Col>
-                <Col md={12} xs={0}>
+                <Col md={4} >
                 {current > 0 && (
                   <Button className="btn-3" type="text" onClick={() => prev()}>
                     <Space size={8}>

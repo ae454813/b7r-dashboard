@@ -32,7 +32,7 @@ const FirstStep = ({form}) => {
             <Text className="step-header">
               {AFTER_SIGNUP.yourStoreURL}
               <br />
-              <a href="URL">URL</a>
+              <a className="step-header" href="URL">URL</a>
             </Text>
             <Title level={5} className="step-title">
               {AFTER_SIGNUP.whatYourCountryAndCurrency}
